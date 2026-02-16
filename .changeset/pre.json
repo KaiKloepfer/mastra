@@ -109,5 +109,27 @@
     "@mastra/gcs": "0.1.0",
     "@mastra/s3": "0.1.0"
   },
-  "changesets": []
+  "changesets": [
+    "@mastra_dynamodb-13114-dependencies",
+    "@mastra_google-cloud-pubsub-13013-dependencies",
+    "@mastra_google-cloud-pubsub-13101-dependencies",
+    "@mastra_inngest-13013-dependencies",
+    "@mastra_playground-ui-13100-dependencies",
+    "allowed-paths-filesystem",
+    "automated-provider-registry-20260213-063209",
+    "beige-phones-smoke",
+    "clean-cloths-behave",
+    "dirty-carrots-sing",
+    "every-flowers-admire",
+    "fancy-places-trade",
+    "fifty-beers-end",
+    "fluffy-dots-report",
+    "great-facts-look",
+    "green-impalas-bake",
+    "hungry-toes-drive",
+    "icy-jobs-rescue",
+    "lovely-comics-thank",
+    "proud-pandas-nail",
+    "slick-poems-post"
+  ]
 }

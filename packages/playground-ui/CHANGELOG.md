@@ -1,5 +1,31 @@
 # @mastra/playground-ui
 
+## 11.1.0-alpha.0
+
+### Minor Changes
+
+- Merged Tools and Integration Tools into a single unified page in the agent CMS. Both tool types now appear in one combobox with visual differentiation: regular tools show a diamond icon while integration tools show a plug icon with a provider badge. ([#13040](https://github.com/mastra-ai/mastra/pull/13040))
+
+### Patch Changes
+
+- dependencies updates: ([#13100](https://github.com/mastra-ai/mastra/pull/13100))
+  - Updated dependency [`@codemirror/view@^6.39.14` ↗︎](https://www.npmjs.com/package/@codemirror/view/v/6.39.14) (from `^6.39.13`, in `dependencies`)
+
+- Fixed schema form to apply changes only on Save click instead of every keystroke. Removed AgentPromptExperimentProvider in favor of inline prompt rendering. Switched hooks to use merged request context for proper request-scoped data fetching. ([#13034](https://github.com/mastra-ai/mastra/pull/13034))
+
+- Added a "Try to connect" button in the MCP client sidebar to preview available tools before creating. Fixed SSE response parsing for MCP servers returning event streams. ([#13093](https://github.com/mastra-ai/mastra/pull/13093))
+
+- Fixed conditional rules not being persisted for workflows, agents, and scorers when creating or updating agents in the CMS. Rules configured on these entities are now correctly saved to storage. ([#13044](https://github.com/mastra-ai/mastra/pull/13044))
+
+- Added a dedicated Integration Tools section to the agent CMS tools page. Providers are shown as cards — clicking one opens a side dialog with toolkit navigation on the left and a searchable, multi-select tool list on the right. Selected tools persist to the agent form. Regular tools now appear in a separate "Available Tools" section. ([#13048](https://github.com/mastra-ai/mastra/pull/13048))
+
+- Added requestContext support to listScorers for request-scoped scorer resolution ([#13034](https://github.com/mastra-ai/mastra/pull/13034))
+
+- Updated dependencies [[`5c75261`](https://github.com/mastra-ai/mastra/commit/5c7526120d936757d4ffb7b82232e1641ebd45cb), [`e37ef84`](https://github.com/mastra-ai/mastra/commit/e37ef8404043c94ca0c8e35ecdedb093b8087878), [`10cf521`](https://github.com/mastra-ai/mastra/commit/10cf52183344743a0d7babe24cd24fd78870c354), [`0dee7a0`](https://github.com/mastra-ai/mastra/commit/0dee7a0ff4c2507e6eb6e6ee5f9738877ebd4ad1), [`55a0ab1`](https://github.com/mastra-ai/mastra/commit/55a0ab13187b3c656247a1d9bfa715077af6e422), [`5ffadfe`](https://github.com/mastra-ai/mastra/commit/5ffadfefb1468ac2612b20bb84d24c39de6961c0), [`55a0ab1`](https://github.com/mastra-ai/mastra/commit/55a0ab13187b3c656247a1d9bfa715077af6e422), [`b6a855e`](https://github.com/mastra-ai/mastra/commit/b6a855edc056e088279075506442ba1d6fa6def9), [`2be1d99`](https://github.com/mastra-ai/mastra/commit/2be1d99564ce79acc4846071082bff353035a87a)]:
+  - @mastra/core@1.5.0-alpha.0
+  - @mastra/client-js@1.4.1-alpha.0
+  - @mastra/react@0.2.4-alpha.0
+
 ## 11.0.0
 
 ### Minor Changes
